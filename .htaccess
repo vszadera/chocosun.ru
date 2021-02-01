@@ -1,0 +1,11 @@
+# Запрет Cache-Control
+<ifModule mod_header.c>
+	Header set Cache-Control"no-store,no-cache"
+</ifModule>
+
+# Запрет Expires
+<ifModule mod_expires.c>
+        ExpiresActive On
+	ExpiresDefault "now"
+</ifModule>
+

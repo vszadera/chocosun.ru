@@ -1,0 +1,8 @@
+User-Agent: *
+Sitemap: https://chocosun.ru/sitemap.xml
+Disallow: /apps/
+Disallow: /core/
+Disallow: /images/
+Disallow: /template/
+Allow: /css/*.css
+Allow: /*.html

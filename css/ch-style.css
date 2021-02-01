@@ -1,0 +1,55 @@
+:root {
+	--ch-color-00-hex: #000000;
+	--ch-color-00-rgb: 0, 0, 0;
+	
+	--ch-color-01-hex: #724A2E;
+	--ch-color-01-rgb: 114, 74, 46;
+
+	--ch-color-02-hex: #E0C35A;
+	--ch-color-02-rgb: 224, 195, 90;
+
+	--ch-color-03-hex: #FDF4E3;
+	--ch-color-03-rgb: 253, 244, 227;
+	
+	--ch-color-04-hex: #FFFFFF;
+	--ch-color-04-rgb: 255, 255, 255;
+}
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+	background-color: rgba(250, 248, 236,0.5);
+    overflow: hidden;
+}
+
+	#ch-main {
+		position: relative;
+		margin: 0px;
+		padding: 0px;
+		width: 100vw;
+		height: 100vh;
+	}
+
+	/* кастомизация всплывающих подсказок */
+	.tooltip-inner {
+		background-color: rgb(var(--ch-color-01-rgb));
+		color: rgb(var(--ch-color-04-rgb));
+		font-size: .8em;
+		-webkit-box-shadow: 1px 1px 0px rgba(var(--ch-color-00-rgb), 0.25);
+		box-shadow: 1px 1px 0px rgba(var(--ch-color-00-rgb), 0.25);
+		border-radius: 5px 10px 5px 10px;
+		padding: 2px 5px 2px 5x;
+	}
+		.tooltip.bs-tooltip-right .arrow:before { border-right-color: rgb(var(--ch-color-01-rgb))!important; }
+		.tooltip.bs-tooltip-left .arrow:before { border-left-color: rgb(var(--ch-color-01-rgb))!important; }
+		.tooltip.bs-tooltip-bottom .arrow:before { border-bottom-color: rgb(var(--ch-color-01-rgb))!important; }
+		.tooltip.bs-tooltip-top .arrow:before { border-top-color: rgb(var(--ch-color-01-rgb))!important; }	
+
+
+
+
+
+ 
+

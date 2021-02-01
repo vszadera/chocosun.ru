@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="Cache-Control" content="private">
+		<meta http-equiv="Cache-Control" content="max-age=1, must-revalidate">
+		<meta http-equiv="Cache-Control" content="max-age=1, proxy-revalidate">
+		<meta name="description" content='Большой выбор сладостей ручной работы в интернет-магазине "ChocoSun". Доставка по городу Тюмень.'> 
+		<meta name="Keywords" content="зефир, букеты из зефира, шоколад, карамель, недорого, вкусно, питательно, полезно, купить в тюмени"> 
+		<meta name="yandex-verification" content="f680202237e53829" />
+		
+		<title>Купить в Тюмени зефир, букеты из зефира, шоколад и конфеты ручной работы, в нашем магазин сладостей "ChocoSun".</title>
+ 
+		<!-- Bootstrap CSS -->
+			<link rel="stylesheet" href="apps/bootstrap-4.3.1/css/bootstrap.min.css">
+		<!-- Roboto Font -->
+			<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+		<!-- External UI -->
+			<!-- OWL-carousel -->
+				<link rel="stylesheet" href="/apps/ui/owlcarousel/owl.carousel.min.css" />		
+				<link rel="stylesheet" href="/apps/ui/owlcarousel/owl.theme.default.css" />
+			<!-- VueBar Custom CSS -->
+				<link rel="stylesheet" href="apps/ui/vuebar/vuebar.css">
+
+			<!-- New VueBar Custom CSS -->
+				<link rel="stylesheet" href="apps/ui/vuescrollbar/vueScrollbar.css">
+
+
+		<!-- Font ChocoSun CSS -->
+		<link rel="stylesheet" href="/apps/font-chocosun-0.1/css/font-chocosun.css">
+		<link rel="stylesheet" href="/apps/font-chocosun-0.1/css/animation.css">
+
+
+		<!-- Our Custom CSS -->
+		<link rel="stylesheet" href="/css/ch-style.css">
+
+		<style type="text/css">
+			body {
+			color: #E0C35A;
+			background: #FDF4E3;
+			font-family: 'Roboto', sans-serif;
+			}
+		</style>
+
+	</head>
+ 
+	<body>
+		<div id="app">
+			<div id="ch-main">
+				<!-- Верхняя навигационная панель -->
+				<topbar 
+					v-bind:cartcount="cartcount" 
+					v-bind:issidebar="issidebar" 
+					@issidebar="GetSideBar"
+					@cartcount="GetCartCount"
+				></topbar>
+
+				<!-- Боковая навигационная панель -->
+				<sidebar 
+					v-bind:issidebar="issidebar" 
+					@issidebar="GetSideBar"
+				></sidebar>
+				
+				<!-- Основной слой: -->
+					<!-- Группы + Продукты -->
+					<group 
+						v-if="type==='group'" 
+						v-bind:type="type" 
+						v-bind:id="id" 
+						v-bind:cartcount="cartcount"
+						@cartcount="GetCartCount"
+					></group>
+
+					<!-- Корзина -->
+					<cart 
+						v-if="type==='cart'" 
+						v-bind:type="type" 
+						v-bind:cartcount="cartcount"
+						@cartcount="GetCartCount"
+					></cart>
+
+					<!-- О нас -->
+					<about 
+						v-if="type==='about'"
+					></about>
+
+					<!-- Доставка -->
+					<delivery 
+						v-if="type==='delivery'"
+					></delivery>
+
+					<!-- Обратная связь -->
+					<feedback
+						v-if="type==='feedback'"
+					></feedback>
+			</div>
+			</div>
+			
+			
+		</div>
+ 
+		<!-- jQuery - Slim version (=without AJAX) -->
+			<script src="apps/jquery-3.4.1/jquery.slim.min.js"></script>
+		<!-- Bootstrap JS -->
+			<script src="apps/bootstrap-4.3.1/js/bootstrap.min.js"></script>
+		<!-- BootStarp Bundle JS -->
+			<script src="apps/bootstrap-4.3.1/js/bootstrap.bundle.min.js"></script>
+		<!-- Vue JS -->
+			<script src="apps/vue/vue.min.js"></script>
+		<!-- httpVueLoader -->
+			<script src="apps/httpVueLoader/httpVueLoader.js"></script>
+		<!-- vue-router -->
+			<script src="apps/vue-router/vue-router.min.js"></script>
+		<!-- AxiOS -->
+			<script src="apps/axios/axios.min.js"></script>
+		<!-- Numeral -->
+			<script src="apps/numeral-2.6.0/numeral.min.js"></script>
+
+		<!-- External UI -->
+			<!-- OWL-carousel -->
+				<script src="apps/ui/owlcarousel/owl.carousel.min.js"></script>
+			<!-- VueBar Custom Scroller -->
+				<script src="apps/ui/vuebar/vuebar.js"></script>
+			<!-- vue-tree -->
+				<script src="apps/ui/vuetree/vue-jstree.js"></script>
+			<!-- vue-mask -->
+				<script src="apps/ui/vuemask/v-mask.min.js"></script>
+
+			<!-- New VueBar Custom Scroller -->
+				<script src="apps/ui/vuescrollbar/vueScrollbar.umd.min.js"></script>
+
+
+		<script src="apps/js/ch-script.js"></script>
+	</body>
+</html>

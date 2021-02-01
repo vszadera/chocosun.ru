@@ -1,0 +1,19 @@
+
+.icon-circle-empty:before { content: '\0100'; } /* 'Ā' */
+.icon-dot-circled:before { content: '\0200'; } /* 'Ȁ' */
+.icon-th-list:before { content: '\a100'; } /* 'ꄀ' */
+.icon-vkontakte:before { content: '\a200'; } /* 'ꈀ' */
+.icon-instagram:before { content: '\a300'; } /* 'ꌀ' */
+.icon-coffee:before { content: '\b100'; } /* '넀' */
+.icon-truck:before { content: '\b200'; } /* '눀' */
+.icon-fidback:before { content: '\b300'; } /* '대' */
+.icon-address:before { content: '\b400'; } /* '됀' */
+.icon-plus:before { content: '\c100'; } /* '섀' */
+.icon-minus:before { content: '\c200'; } /* '숀' */
+.icon-remove:before { content: '\c300'; } /* '쌀' */
+.icon-basket:before { content: '\c400'; } /* '쐀' */
+.icon-trash:before { content: '\c500'; } /* '씀' */
+.icon-check-empty:before { content: '\d300'; } /* '팀' */
+.icon-check:before { content: '\d400'; } /* '퐀' */
+.icon-wallet:before { content: '\d500'; } /* '픀' */
+.icon-rouble:before { content: '\e100'; } /* '' */
